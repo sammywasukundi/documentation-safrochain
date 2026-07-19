@@ -211,7 +211,8 @@ export default {
   ],
   "clientModules": [
     "D:\\opensource-project\\documentation-safrochain\\src\\clientModules\\back-nav-fix.ts",
-    "D:\\opensource-project\\documentation-safrochain\\src\\clientModules\\seo-jsonld.ts"
+    "D:\\opensource-project\\documentation-safrochain\\src\\clientModules\\seo-jsonld.ts",
+    "D:\\opensource-project\\documentation-safrochain\\src\\clientModules\\chatbot-float-button.ts"
   ],
   "plugins": [
     "D:\\opensource-project\\documentation-safrochain\\plugins\\silence-bundler-warnings.js",

@@ -142,6 +142,7 @@ const config: Config = {
   clientModules: [
     require.resolve('./src/clientModules/back-nav-fix.ts'),
     require.resolve('./src/clientModules/seo-jsonld.ts'),
+    require.resolve('./src/clientModules/chatbot-float-button.ts'),
   ],
 
   plugins: [

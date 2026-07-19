@@ -5,4 +5,5 @@ export default [
   require("D:\\opensource-project\\documentation-safrochain\\src\\css\\custom.css"),
   require("D:\\opensource-project\\documentation-safrochain\\src\\clientModules\\back-nav-fix.ts"),
   require("D:\\opensource-project\\documentation-safrochain\\src\\clientModules\\seo-jsonld.ts"),
+  require("D:\\opensource-project\\documentation-safrochain\\src\\clientModules\\chatbot-float-button.ts"),
 ];

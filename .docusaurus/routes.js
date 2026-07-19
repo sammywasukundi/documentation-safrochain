@@ -3,6 +3,11 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/chat',
+    component: ComponentCreator('/chat', '4b9'),
+    exact: true
+  },
+  {
     path: '/search',
     component: ComponentCreator('/search', '822'),
     exact: true

@@ -10,6 +10,11 @@ const sidebars: SidebarsConfig = {
         'intro',
         'getting-started/what-is-safrochain',
         'getting-started/quick-links',
+        {
+          type: 'link',
+          label: 'Ask me',
+          href: '/chat',
+        },
       ],
     },
     {
