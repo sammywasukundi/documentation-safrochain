@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
-    exact: true
-  },
-  {
     path: '/search',
     component: ComponentCreator('/search', '822'),
     exact: true
@@ -49,265 +14,265 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '214'),
+    component: ComponentCreator('/', 'db5'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '1bf'),
+        component: ComponentCreator('/', 'c5e'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '5b0'),
+            component: ComponentCreator('/', 'b82'),
             routes: [
               {
                 path: '/cli/bank',
-                component: ComponentCreator('/cli/bank', 'e1f'),
+                component: ComponentCreator('/cli/bank', '822'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/cli/governance',
-                component: ComponentCreator('/cli/governance', '6a3'),
+                component: ComponentCreator('/cli/governance', 'a27'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/cli/keys',
-                component: ComponentCreator('/cli/keys', '5ee'),
+                component: ComponentCreator('/cli/keys', 'f28'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/cli/overview',
-                component: ComponentCreator('/cli/overview', 'ab7'),
+                component: ComponentCreator('/cli/overview', '58b'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/cli/query',
-                component: ComponentCreator('/cli/query', '066'),
+                component: ComponentCreator('/cli/query', '524'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/cli/staking',
-                component: ComponentCreator('/cli/staking', 'a02'),
+                component: ComponentCreator('/cli/staking', '27c'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/cli/tx',
-                component: ComponentCreator('/cli/tx', '957'),
+                component: ComponentCreator('/cli/tx', 'df0'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/developers/get-started/choose-your-stack',
-                component: ComponentCreator('/developers/get-started/choose-your-stack', '691'),
+                component: ComponentCreator('/developers/get-started/choose-your-stack', '197'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/get-started/first-transaction',
-                component: ComponentCreator('/developers/get-started/first-transaction', 'de1'),
+                component: ComponentCreator('/developers/get-started/first-transaction', 'e2b'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/get-started/local-devnet',
-                component: ComponentCreator('/developers/get-started/local-devnet', '9be'),
+                component: ComponentCreator('/developers/get-started/local-devnet', 'd01'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/get-started/testnet-setup',
-                component: ComponentCreator('/developers/get-started/testnet-setup', '487'),
+                component: ComponentCreator('/developers/get-started/testnet-setup', 'c45'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/integrations/ibc-transfers',
-                component: ComponentCreator('/developers/integrations/ibc-transfers', '397'),
+                component: ComponentCreator('/developers/integrations/ibc-transfers', '1f6'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/integrations/payments-flow',
-                component: ComponentCreator('/developers/integrations/payments-flow', 'd33'),
+                component: ComponentCreator('/developers/integrations/payments-flow', '4ad'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/integrations/token-factory',
-                component: ComponentCreator('/developers/integrations/token-factory', '41d'),
+                component: ComponentCreator('/developers/integrations/token-factory', '53e'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/mobile/flutter',
-                component: ComponentCreator('/developers/mobile/flutter', 'abd'),
+                component: ComponentCreator('/developers/mobile/flutter', '376'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/mobile/keys-and-ux',
-                component: ComponentCreator('/developers/mobile/keys-and-ux', '8ef'),
+                component: ComponentCreator('/developers/mobile/keys-and-ux', '0bc'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/mobile/react-native',
-                component: ComponentCreator('/developers/mobile/react-native', '1c2'),
+                component: ComponentCreator('/developers/mobile/react-native', '3a1'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/reference/chain-constants',
-                component: ComponentCreator('/developers/reference/chain-constants', 'b8f'),
+                component: ComponentCreator('/developers/reference/chain-constants', 'cd1'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/reference/endpoints',
-                component: ComponentCreator('/developers/reference/endpoints', '516'),
+                component: ComponentCreator('/developers/reference/endpoints', '088'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/reference/events-and-websockets',
-                component: ComponentCreator('/developers/reference/events-and-websockets', '578'),
+                component: ComponentCreator('/developers/reference/events-and-websockets', '215'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/safhandle',
-                component: ComponentCreator('/developers/safhandle', '15f'),
+                component: ComponentCreator('/developers/safhandle', 'ab6'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/safhandle/manage',
-                component: ComponentCreator('/developers/safhandle/manage', 'da5'),
+                component: ComponentCreator('/developers/safhandle/manage', '85c'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/safhandle/register',
-                component: ComponentCreator('/developers/safhandle/register', 'ea2'),
+                component: ComponentCreator('/developers/safhandle/register', '5d5'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/safhandle/resolve',
-                component: ComponentCreator('/developers/safhandle/resolve', '396'),
+                component: ComponentCreator('/developers/safhandle/resolve', '3dc'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/smart-contracts/build-in-rust',
-                component: ComponentCreator('/developers/smart-contracts/build-in-rust', '3eb'),
+                component: ComponentCreator('/developers/smart-contracts/build-in-rust', '78f'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/smart-contracts/deploy-and-manage',
-                component: ComponentCreator('/developers/smart-contracts/deploy-and-manage', '4c9'),
+                component: ComponentCreator('/developers/smart-contracts/deploy-and-manage', '938'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/smart-contracts/interact-from-apps',
-                component: ComponentCreator('/developers/smart-contracts/interact-from-apps', 'a8b'),
+                component: ComponentCreator('/developers/smart-contracts/interact-from-apps', '4f2'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/smart-contracts/local-dev-and-testing',
-                component: ComponentCreator('/developers/smart-contracts/local-dev-and-testing', '9ea'),
+                component: ComponentCreator('/developers/smart-contracts/local-dev-and-testing', '4ea'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/smart-contracts/overview',
-                component: ComponentCreator('/developers/smart-contracts/overview', 'd74'),
+                component: ComponentCreator('/developers/smart-contracts/overview', '035'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/start-here',
-                component: ComponentCreator('/developers/start-here', '0dd'),
+                component: ComponentCreator('/developers/start-here', 'f51'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/transactions/broadcast-modes',
-                component: ComponentCreator('/developers/transactions/broadcast-modes', '742'),
+                component: ComponentCreator('/developers/transactions/broadcast-modes', '421'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/transactions/signing-overview',
-                component: ComponentCreator('/developers/transactions/signing-overview', '180'),
+                component: ComponentCreator('/developers/transactions/signing-overview', '2a9'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/transactions/simulate-gas-fees',
-                component: ComponentCreator('/developers/transactions/simulate-gas-fees', '18e'),
+                component: ComponentCreator('/developers/transactions/simulate-gas-fees', '9f2'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/wallets/connect-browser-wallets',
-                component: ComponentCreator('/developers/wallets/connect-browser-wallets', '1d6'),
+                component: ComponentCreator('/developers/wallets/connect-browser-wallets', '76b'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/wallets/cosmos-kit',
-                component: ComponentCreator('/developers/wallets/cosmos-kit', '96c'),
+                component: ComponentCreator('/developers/wallets/cosmos-kit', '12a'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/wallets/supported-wallets',
-                component: ComponentCreator('/developers/wallets/supported-wallets', '5f7'),
+                component: ComponentCreator('/developers/wallets/supported-wallets', '6b6'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/web/cosmjs',
-                component: ComponentCreator('/developers/web/cosmjs', 'ae2'),
+                component: ComponentCreator('/developers/web/cosmjs', '210'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/developers/web/query-chain',
-                component: ComponentCreator('/developers/web/query-chain', '915'),
+                component: ComponentCreator('/developers/web/query-chain', '2a5'),
                 exact: true,
                 sidebar: "developersSidebar"
               },
               {
                 path: '/getting-started/quick-links',
-                component: ComponentCreator('/getting-started/quick-links', 'c68'),
+                component: ComponentCreator('/getting-started/quick-links', 'b4f'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/getting-started/what-is-safrochain',
-                component: ComponentCreator('/getting-started/what-is-safrochain', 'b86'),
+                component: ComponentCreator('/getting-started/what-is-safrochain', '2cc'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/ibc/channels',
-                component: ComponentCreator('/ibc/channels', '3dd'),
+                component: ComponentCreator('/ibc/channels', '6f9'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/ibc/hermes-setup',
-                component: ComponentCreator('/ibc/hermes-setup', 'b3c'),
+                component: ComponentCreator('/ibc/hermes-setup', 'c8c'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
@@ -319,379 +284,379 @@ export default [
               },
               {
                 path: '/intro',
-                component: ComponentCreator('/intro', 'e3a'),
+                component: ComponentCreator('/intro', '0bc'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/auth',
-                component: ComponentCreator('/modules/auth', '9c5'),
+                component: ComponentCreator('/modules/auth', '4dd'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/authz',
-                component: ComponentCreator('/modules/authz', 'bbc'),
+                component: ComponentCreator('/modules/authz', '7e2'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/bank',
-                component: ComponentCreator('/modules/bank', 'd44'),
+                component: ComponentCreator('/modules/bank', 'dad'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/clock',
-                component: ComponentCreator('/modules/clock', '398'),
+                component: ComponentCreator('/modules/clock', '24d'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/consensus',
-                component: ComponentCreator('/modules/consensus', 'ad2'),
+                component: ComponentCreator('/modules/consensus', 'd81'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/crisis',
-                component: ComponentCreator('/modules/crisis', '1cf'),
+                component: ComponentCreator('/modules/crisis', '24c'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/cw-hooks',
-                component: ComponentCreator('/modules/cw-hooks', '2fc'),
+                component: ComponentCreator('/modules/cw-hooks', 'eb8'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/distribution',
-                component: ComponentCreator('/modules/distribution', '905'),
+                component: ComponentCreator('/modules/distribution', 'aa4'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/drip',
-                component: ComponentCreator('/modules/drip', '65b'),
+                component: ComponentCreator('/modules/drip', 'db9'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/evidence',
-                component: ComponentCreator('/modules/evidence', '6e2'),
+                component: ComponentCreator('/modules/evidence', '29c'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/feegrant',
-                component: ComponentCreator('/modules/feegrant', '95b'),
+                component: ComponentCreator('/modules/feegrant', 'e60'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/feepay',
-                component: ComponentCreator('/modules/feepay', '272'),
+                component: ComponentCreator('/modules/feepay', 'eab'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/feeshare',
-                component: ComponentCreator('/modules/feeshare', '8eb'),
+                component: ComponentCreator('/modules/feeshare', '2e4'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/globalfee',
-                component: ComponentCreator('/modules/globalfee', '9d9'),
+                component: ComponentCreator('/modules/globalfee', '916'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/gov',
-                component: ComponentCreator('/modules/gov', '7a1'),
+                component: ComponentCreator('/modules/gov', '127'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/ibc-core',
-                component: ComponentCreator('/modules/ibc-core', 'f03'),
+                component: ComponentCreator('/modules/ibc-core', '548'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/ibc-fee',
-                component: ComponentCreator('/modules/ibc-fee', 'efd'),
+                component: ComponentCreator('/modules/ibc-fee', 'ec6'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/ibc-hooks',
-                component: ComponentCreator('/modules/ibc-hooks', 'a67'),
+                component: ComponentCreator('/modules/ibc-hooks', '579'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/ibc-transfer-app',
-                component: ComponentCreator('/modules/ibc-transfer-app', 'c5c'),
+                component: ComponentCreator('/modules/ibc-transfer-app', 'bb3'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/interchain-accounts',
-                component: ComponentCreator('/modules/interchain-accounts', 'f69'),
+                component: ComponentCreator('/modules/interchain-accounts', 'ed4'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/interchain-query',
-                component: ComponentCreator('/modules/interchain-query', '46f'),
+                component: ComponentCreator('/modules/interchain-query', '2cb'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/mint',
-                component: ComponentCreator('/modules/mint', '50b'),
+                component: ComponentCreator('/modules/mint', 'b41'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/nft',
-                component: ComponentCreator('/modules/nft', 'a75'),
+                component: ComponentCreator('/modules/nft', 'd44'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/overview',
-                component: ComponentCreator('/modules/overview', 'b63'),
+                component: ComponentCreator('/modules/overview', 'c56'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/params',
-                component: ComponentCreator('/modules/params', 'b84'),
+                component: ComponentCreator('/modules/params', '788'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/slashing',
-                component: ComponentCreator('/modules/slashing', '7c3'),
+                component: ComponentCreator('/modules/slashing', '930'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/staking',
-                component: ComponentCreator('/modules/staking', '3ff'),
+                component: ComponentCreator('/modules/staking', '68e'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/tokenfactory',
-                component: ComponentCreator('/modules/tokenfactory', '07b'),
+                component: ComponentCreator('/modules/tokenfactory', 'ff2'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/upgrade',
-                component: ComponentCreator('/modules/upgrade', '955'),
+                component: ComponentCreator('/modules/upgrade', '8bb'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/vesting',
-                component: ComponentCreator('/modules/vesting', 'b39'),
+                component: ComponentCreator('/modules/vesting', 'eda'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/modules/wasm',
-                component: ComponentCreator('/modules/wasm', '1c4'),
+                component: ComponentCreator('/modules/wasm', 'b2c'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/networks/chain-registry',
-                component: ComponentCreator('/networks/chain-registry', '25f'),
+                component: ComponentCreator('/networks/chain-registry', 'f54'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/networks/local-devnet-endpoints',
-                component: ComponentCreator('/networks/local-devnet-endpoints', 'e8b'),
+                component: ComponentCreator('/networks/local-devnet-endpoints', '6c6'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/networks/mainnet-endpoints',
-                component: ComponentCreator('/networks/mainnet-endpoints', '1e4'),
+                component: ComponentCreator('/networks/mainnet-endpoints', 'ab2'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/networks/testnet-endpoints',
-                component: ComponentCreator('/networks/testnet-endpoints', '556'),
+                component: ComponentCreator('/networks/testnet-endpoints', 'dfc'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/protocol/foundation',
-                component: ComponentCreator('/protocol/foundation', 'fc7'),
+                component: ComponentCreator('/protocol/foundation', '999'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/protocol/governance',
-                component: ComponentCreator('/protocol/governance', '28a'),
+                component: ComponentCreator('/protocol/governance', 'a77'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/protocol/tokenomics',
-                component: ComponentCreator('/protocol/tokenomics', 'd20'),
+                component: ComponentCreator('/protocol/tokenomics', '7d1'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/resources/brand-assets',
-                component: ComponentCreator('/resources/brand-assets', '802'),
+                component: ComponentCreator('/resources/brand-assets', '5b9'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/resources/faq',
-                component: ComponentCreator('/resources/faq', 'b35'),
+                component: ComponentCreator('/resources/faq', 'dfa'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/resources/whitepaper',
-                component: ComponentCreator('/resources/whitepaper', '9f7'),
+                component: ComponentCreator('/resources/whitepaper', '09c'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/run-a-node/hardware',
-                component: ComponentCreator('/run-a-node/hardware', '094'),
+                component: ComponentCreator('/run-a-node/hardware', '708'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/run-a-node/install',
-                component: ComponentCreator('/run-a-node/install', 'a2c'),
+                component: ComponentCreator('/run-a-node/install', '27a'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/run-a-node/join-mainnet',
-                component: ComponentCreator('/run-a-node/join-mainnet', 'e04'),
+                component: ComponentCreator('/run-a-node/join-mainnet', 'ecb'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/run-a-node/join-testnet',
-                component: ComponentCreator('/run-a-node/join-testnet', '980'),
+                component: ComponentCreator('/run-a-node/join-testnet', '0c7'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/run-a-node/local-devnet',
-                component: ComponentCreator('/run-a-node/local-devnet', '5cd'),
+                component: ComponentCreator('/run-a-node/local-devnet', '1d4'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/run-a-node/local-testnet',
-                component: ComponentCreator('/run-a-node/local-testnet', '7a6'),
+                component: ComponentCreator('/run-a-node/local-testnet', 'e16'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/run-a-node/overview',
-                component: ComponentCreator('/run-a-node/overview', '531'),
+                component: ComponentCreator('/run-a-node/overview', '06a'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/run-a-node/snapshots',
-                component: ComponentCreator('/run-a-node/snapshots', 'f3d'),
+                component: ComponentCreator('/run-a-node/snapshots', '66a'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/run-a-node/statesync',
-                component: ComponentCreator('/run-a-node/statesync', '7b3'),
+                component: ComponentCreator('/run-a-node/statesync', 'c6f'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/run-a-node/upgrades',
-                component: ComponentCreator('/run-a-node/upgrades', '85d'),
+                component: ComponentCreator('/run-a-node/upgrades', '174'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/validators/alerting',
-                component: ComponentCreator('/validators/alerting', '681'),
+                component: ComponentCreator('/validators/alerting', '0f0'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/validators/become-a-validator',
-                component: ComponentCreator('/validators/become-a-validator', '16e'),
+                component: ComponentCreator('/validators/become-a-validator', 'cfb'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/validators/disaster-recovery',
-                component: ComponentCreator('/validators/disaster-recovery', '305'),
+                component: ComponentCreator('/validators/disaster-recovery', '69e'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/validators/key-management',
-                component: ComponentCreator('/validators/key-management', '8c7'),
+                component: ComponentCreator('/validators/key-management', '53e'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/validators/monitoring',
-                component: ComponentCreator('/validators/monitoring', '583'),
+                component: ComponentCreator('/validators/monitoring', '20c'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/validators/operations',
-                component: ComponentCreator('/validators/operations', '46e'),
+                component: ComponentCreator('/validators/operations', '2aa'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/validators/overview',
-                component: ComponentCreator('/validators/overview', '051'),
+                component: ComponentCreator('/validators/overview', '101'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/validators/remote-signing',
-                component: ComponentCreator('/validators/remote-signing', '99d'),
+                component: ComponentCreator('/validators/remote-signing', 'a78'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/validators/security',
-                component: ComponentCreator('/validators/security', '147'),
+                component: ComponentCreator('/validators/security', '915'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/validators/sentry-architecture',
-                component: ComponentCreator('/validators/sentry-architecture', '59b'),
+                component: ComponentCreator('/validators/sentry-architecture', '0d5'),
                 exact: true,
                 sidebar: "infraSidebar"
               },
               {
                 path: '/validators/slashing',
-                component: ComponentCreator('/validators/slashing', '309'),
+                component: ComponentCreator('/validators/slashing', '479'),
                 exact: true,
                 sidebar: "infraSidebar"
               }

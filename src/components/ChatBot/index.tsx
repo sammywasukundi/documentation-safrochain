@@ -16,7 +16,11 @@ function renderMessageText(text: string) {
   ));
 }
 
-export default function ChatBot(): React.JSX.Element {
+type ChatBotProps = {
+  onClose?: () => void;
+};
+
+export default function ChatBot({ onClose }: ChatBotProps): React.JSX.Element {
   const { messages, inputValue, setInputValue, sendMessage, resetChat, isLoading } = useChatBot();
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -29,16 +33,36 @@ export default function ChatBot(): React.JSX.Element {
   return (
     <section className={styles.root}>
       <div className={styles.header}>
-        <div>
-          <div className={styles.badge}>Safrochain Assistant</div>
-          <h2 className={styles.title}>Ask me</h2>
+        <div className={styles.headerText}>
+          <div className={styles.badge}>
+            <span className={styles.badgeDot} />
+            Safrochain Assistant
+          </div>
+          <h2 className={styles.title}>Ask me anything</h2>
         </div>
-        <button className={styles.secondaryButton} type="button" onClick={resetChat}>
-          New chat
-        </button>
+        <div className={styles.headerActions}>
+          <button className={styles.ghostButton} type="button" onClick={resetChat}>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 12a8 8 0 1 1 2.34 5.66" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M4 20v-5h5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            New chat
+          </button>
+          <button className={styles.ghostIconButton} type="button" onClick={onClose} aria-label="Close chat">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+          </button>
+        </div>
       </div>
 
       <div className={styles.messages}>
+        {messages.length === 0 && !isLoading ? (
+          <div className={styles.emptyState}>
+            <p>Ask about testnet, RPC endpoints, or the CLI — or tap a suggestion below.</p>
+          </div>
+        ) : null}
+
         {messages.map(message => (
           <div
             key={message.id}
@@ -59,19 +83,6 @@ export default function ChatBot(): React.JSX.Element {
       </div>
 
       <div className={styles.footer}>
-        <form className={styles.formRow} onSubmit={handleSubmit}>
-          <input
-            className={styles.input}
-            value={inputValue}
-            onChange={event => setInputValue(event.target.value)}
-            placeholder="Ask about Safrochain"
-            aria-label="Ask the Safrochain assistant"
-          />
-          <button className={styles.button} type="submit">
-            Send
-          </button>
-        </form>
-
         <div className={styles.suggestions}>
           {starterPrompts.map(prompt => (
             <button
@@ -84,6 +95,21 @@ export default function ChatBot(): React.JSX.Element {
             </button>
           ))}
         </div>
+
+        <form className={styles.formRow} onSubmit={handleSubmit}>
+          <input
+            className={styles.input}
+            value={inputValue}
+            onChange={event => setInputValue(event.target.value)}
+            placeholder="Ask about Safrochain"
+            aria-label="Ask the Safrochain assistant"
+          />
+          <button className={styles.button} type="submit" aria-label="Send message">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 12h16M13 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+        </form>
       </div>
     </section>
   );

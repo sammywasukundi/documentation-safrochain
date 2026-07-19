@@ -6,16 +6,67 @@
 }
 
 .launcher {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
   border: none;
-  border-radius: 10px;
-  padding: 0.8rem 1rem;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  border-radius: 999px;
+  padding: 0;
+  background: rgba(36, 95, 225, 1);
   color: #ffffff;
   cursor: pointer;
-  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.launcher:hover,
+.launcher:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: rgba(50, 50, 93, 0.32) 0px 16px 32px -5px, rgba(0, 0, 0, 0.35) 0px 10px 18px -8px;
+}
+
+.launcher:focus-visible {
+  outline: 2px solid rgba(36, 95, 225, 0.5);
+  outline-offset: 3px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  right: 0;
+  white-space: nowrap;
+  background: #1f2937;
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 14px;
+  border: 5px solid transparent;
+  border-top-color: #1f2937;
+}
+
+.launcher:hover .tooltip,
+.launcher:focus-visible .tooltip {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .panel {
   margin-top: 0.75rem;
   max-width: min(92vw, 520px);
 }
+
