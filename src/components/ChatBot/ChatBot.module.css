@@ -1,0 +1,150 @@
+.root {
+  display: grid;
+  gap: 1rem;
+  width: min(100%, 520px);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 16px;
+  background: var(--ifm-background-color);
+  padding: 1rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-700);
+  background: var(--ifm-color-emphasis-100);
+  margin-bottom: 0.35rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.secondaryButton {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: transparent;
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  cursor: pointer;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  min-height: 260px;
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 0.2rem;
+}
+
+.message {
+  display: flex;
+}
+
+.messageUser {
+  justify-content: flex-end;
+}
+
+.messageAssistant {
+  justify-content: flex-start;
+}
+
+.messageBubble {
+  max-width: 85%;
+  padding: 0.8rem 0.95rem;
+  border-radius: 12px;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-content);
+  line-height: 1.5;
+}
+
+.messageUser .messageBubble {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.messageText {
+  margin: 0;
+}
+
+.loadingBubble {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: currentColor;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.footer {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.formRow {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.input {
+  flex: 1;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 999px;
+  padding: 0.7rem 0.95rem;
+  background: var(--ifm-background-color);
+}
+
+.button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  background: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.prompt {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 999px;
+  background: transparent;
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0%, 80%, 100% { opacity: 0.35; transform: scale(0.95); }
+  40% { opacity: 1; transform: scale(1); }
+}
